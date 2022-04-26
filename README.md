@@ -8,4 +8,4 @@ This program *increments* and *decreases* a value, which is shown to you on the 
 
 + :computer: Python
 + :placard: Tkinter
-+ :battery: PostgresSQL
++ :battery: PostgreSQL
