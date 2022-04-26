@@ -1,10 +1,12 @@
 ### Value Gui
 
+---
+
 This program *increments* and *decreases* a value, which is shown to you on the gui.
 
 --- 
 
-# Technology used
+# Technology
 
 + :computer: Python
 + :placard: Tkinter
