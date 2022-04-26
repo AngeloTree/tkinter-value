@@ -4,4 +4,8 @@ This program *increments* and *decreases* a value, which is shown to you on the 
 
 --- 
 
-+ :computer: Technology 
+# Technology used
+
++ :computer: Python
++ :placard: Tkinter
++ :battery: PostgresSQL
