@@ -22,6 +22,11 @@ if __name__ == "__main__":
         lbl_value["text"] = str(text_value)
         valueDb.update_number(text_value)
 
+    def clear():
+        print("Clear button pressed.")
+        clear_value = lbl_value["text"] = "0"
+        valueDb.update_number(clear_value)
+
 
     window.rowconfigure(0, minsize=50, weight=1)
     window.columnconfigure([0, 1, 2], minsize=50, weight=1)
@@ -35,7 +40,7 @@ if __name__ == "__main__":
     btn_increase = tk.Button(master=window, text="+", command=increase)
     btn_increase.grid(row=0, column=2, sticky="nsew")
     
-    btn_clear = tk.Button(master=window, text="Clear")
+    btn_clear = tk.Button(master=window, text="Clear", command=clear)
     btn_clear.grid(row=1, column=1, sticky="new")
 
 
