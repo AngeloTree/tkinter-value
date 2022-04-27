@@ -13,6 +13,14 @@ def get_connection():
    conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST)
    return conn
 
+def get_number():
+    with get_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.DictCursor) as cursor:
+            cursor.execute(f"SELECT * FROM number WHERE id = {4}")
+            current_number = cursor.fetchone()['num']
+            return current_number
+            print("Got number.")
+
 def update_number(newNum):
     with get_connection() as conn:
         with conn.cursor(cursor_factory=psycopg2.extras.DictCursor) as cursor:
